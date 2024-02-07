@@ -3,69 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_resume.css">
-    <title>Your Name - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Brett Bates - Digital Resume</title>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
+        <img src="./img/portfolioheadshot.png" alt="Your Profile Image" class="profile-image">
+        <h1>Brett Russell Bates</h1>
         <p>Full Stack Web Developer</p>
+        <p>Carpenter turned full stack web developer with a passion for creating useful applications. Years of mastering a wide breadth of skills has sharpened learning speed and ability to work effectively with others. Looking for a company that fosters teamwork, encourages challenges, and enables growth.</p>
     </header>
 
     <section id="contact">
-        <h2>Contact Information</h2>
+        <h2>contact</h2>
         <ul>
-            <li>Email: your.email@example.com</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/yourname" target="_blank">linkedin.com/in/yourname</a></li>
-            <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
-            <li>Website: <a href="https://www.yourwebsite.com" target="_blank">yourwebsite.com</a></li>
+            <li>brettbates86@gmail.com</li>
+            <li><a href="https://www.linkedin.com/in/brett-russell-bates-3b3a0524a/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/brbates86" target="_blank">GitHub</a></li>
+            <li><a href="https://www.yourwebsite.com" target="_blank">Portfolio</a></li>
         </ul>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React.js, Node.js</li>
-            <li>Database Management (MySQL, MongoDB)</li>
-            <li>Version Control (Git)</li>
-            <li>Responsive Web Design</li>
-        </ul>
+        <h2>skills</h2>
+        <div class="skill-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React.js</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Express.js</div>
+            <div class="skill">MongoDB</div>
+            <div class="skill">MySQL</div>
+            <!-- Add more skills as needed -->
+        </div>
     </section>
 
     <section id="education">
-        <h2>Education</h2>
-        <p>BS in Computer Science - University of Example, Graduated May 20XX</p>
+        <h2>education</h2>
+        <p>The University of Kansas Coding Bootcamp | 2022-2023</p>
     </section>
 
     <section id="experience">
-        <h2>Work Experience</h2>
-        <h3>Full Stack Developer - ABC Tech Solutions</h3>
-        <p>June 20XX - Present</p>
+        <h2>experience</h2>
+        <h3>Full Stack Web Development Program</h3>
+        <p>Aug 2022 - Mar 2023</p>
         <ul>
-            <li>Developing and maintaining web applications using React.js and Node.js</li>
-            <li>Collaborating with cross-functional teams to design and implement new features</li>
+            <li>Strengthened attention to detail and troubleshooting skills by learning coding</li>
+            <li>Worked effectively using scrum framework in teams to create JavaScript web applications and databases</li>
+            <li>Responsible for learning a new language/library quickly then using to create websites weekly</li>
+            <li>Enjoyed the thrill of learning a whole new set of skills and how to create with them</li>
+            <li></li>
         </ul>
 
-        <h3>Junior Web Developer - XYZ Web Agency</h3>
-        <p>January 20XX - May 20XX</p>
+        <h3>Full Stack Developer</h3>
+        <p>Mar 2023 - Present</p>
         <ul>
-            <li>Assisted in the development of responsive websites for clients</li>
-            <li>Worked on front-end and back-end tasks using HTML, CSS, and JavaScript</li>
+            <li>Develop a portfolio showcasing projects completed during the bootcamp. </li>
+            <li>Tailored resumes and LinkedIn profile to highlight newly acquired coding skills, projects, and achievements.</li>
+            <li>The tech industry evolves rapidly, so continuous learning is essential. Stay updated on the latest technologies, frameworks, and tools.</li>
+            <li>Exploring freelance opportunities to build experience</li>
         </ul>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1: Web Portfolio</h3>
-            <p>Developed a modern and responsive web portfolio showcasing skills and projects.</p>
-        </div>
+        <h2>projects</h2>
+        <div class="project-tiles">
+            <div class="project-tile" onclick="toggleDetails(this)">
+                <img src="./img/Fount tile.jpg" alt="Project 1 Image">
+                <h3></h3>
+                <p>Developed a modern and responsive web portfolio showcasing skills and projects.</p>
+                <div class="details">Additional details for Project 1.</div>
+            </div>
+    
+            <div class="project-tile" onclick="toggleDetails(this)">
+                <img src="./img/weatherwise tile.jpg" alt="Project 1 Image">
+                <h3></h3>
+                <p>Created a task manager application using React.js with features like task creation and completion tracking.</p>
+                <div class="details">Additional details for Project 2.</div>
+            </div>
 
-        <div class="project">
-            <h3>Project 2: Task Manager App</h3>
-            <p>Created a task manager application using React.js with features like task creation and completion tracking.</p>
+            <div class="project-tile" onclick="toggleDetails(this)">
+                <img src="./img/techhubtile.jpg" alt="Project 1 Image">
+                <h3></h3>
+                <p>Developed a modern and responsive web portfolio showcasing skills and projects.</p>
+                <div class="details">Additional details for Project 1.</div>
+            </div>
+
+            <div class="project-tile" onclick="toggleDetails(this)">
+                <img src="./img/securekeyfinal.png" alt="Project 1 Image">
+                <h3></h3>
+                <p>Developed a modern and responsive web portfolio showcasing skills and projects.</p>
+                <div class="details">Additional details for Project 1.</div>
+            </div>
+            <!-- Add more project tiles as needed -->
         </div>
+    
     </section>
 
     <footer>
